@@ -1,0 +1,212 @@
+@font-face {
+    font-family: Aller;
+    src: local(Aller), url(http://arquivo.devmedia.com.br/naoexclusivo/JoelRodrigues/Documentacao/css-font-face/exemplo2/);
+    font-style: oblique;
+    font-stretch: condensed;
+}
+
+h1 {
+    font-family: Arial, Gadget, sans-serif;
+    color: rgba(179, 197, 160, 0.5); /*Podemos definir o rgb, hexadecimal, rgba(opacidade) e o nome da cor em inglês, hsla recebe luminosidade matiz e etc*/
+    font-size: 15px;
+    font-weight: 700;
+    font-style: italic;
+}
+
+p {
+    text-align: center;
+    font-size: 14px;
+}
+
+blockquote {
+    margin: 0;
+    font-weight: normal;
+    font-size: x-large;
+}
+
+.paragrafo_meio {
+    text-align: right;
+    font-size: 14px; line-height: 1.6em; /*1.6 vezes esse valor 14*/
+    text-transform: capitalize;
+    letter-spacing: 2px; word-spacing: 4px; 
+    text-decoration: line-through; /*overline, underline*/
+    text-shadow: 2px 4px 5px #eee, 0 0 1px red; /*horizontal, vertical e borrado*/
+}
+
+/*
+Cores
+
+ #div1 { background-color: yellow; }
+      #div2 { background-color: #ababab; }
+      #div3 { background-color: rgb(125, 89, 65); }
+      #div4 { background-color: rgba(125, 89, 65, 0.5); }
+      #div5 { background-color: hsl(120, 100%, 50%); }
+      #div6 { background-color: hsla(120, 50%, 50%, 0.5);}
+      div { background-color: yellow; background-image: url(../imagem/plano-de-fundo.jpeg); }
+      div { background-repeat: no-repeat; }
+      div { background-position: 10px center; } eixo x e y
+      div { background: yellow url(../imagem/plano-de-fundo.jpeg) no-repeat 10px center; }
+      div { background-size: contain; } Ocupa tudo sem distorcer, cover para ocupar espaço interno sem cortar
+      div { background-attachment: fixed; } Controla a imagem em relação a rolagem do site
+
+Valores font-size
+xx-small,x-mall, small smaller, mediun, larger, large, x-large e xx-large
+
+Unidades:
+cm	centímetros
+mm	milímetros
+in	polegadas
+px	pixels
+pt	pontos
+pc	paica
+
+em	1em é uma vez o font-size do elemento
+rem	1rem é uma vez o font-size do elemento acima na hierarquia de elementos
+vw	1vw é 1% da largura da janela do navegador
+vh	1vh é 1% da altura da janela do navegador
+vmin	1vmin é 1% da menor dimensão da janela do navegador
+vmax	1vmax é 1% da maior dimensão da janela do navegador
+%	calcula o tamanho relativo ao elemento pai
+
+E[atributo="valor"]: elementos do tipo E cujo atributo seja igual a valor.
+E[atributo^="valor"]: elementos do tipo E cujo valor do atributo comece com a palavra valor.
+E[atributo$="valor"]: elementos do tipo E cujo valor do atributo termine com a palavra valor.
+E[atributo*="valor"]: elementos do tipo E cujo valor do atributo contenha a palavra valor.
+
+div[id="cabecalho"]{
+    font-size:xx-large;
+}
+
+div[id^="parte"]{
+    height:50%;
+}
+
+div[id$="inferior"]{
+    background:#87CEEB;
+}
+
+div[id*="roda"]{
+    background:red;
+}
+
+:root: seleciona o elemento raiz do documento, no caso, é a tag HTML.
+E:nth-child(N): seleciona o elemento do tipo E que seja o N-ésimo filho do seu elemento pai.
+E:nth-last-child(N): semelhante ao anterior, mas começando a contagem de baixo para cima.
+E:nth-of-type(N): seleciona o elemento que seja o N-ésimo do seu tipo.
+E:nth-last-of-type(N): semelhante ao anterior, mas contando de baixo para cima.
+E:last-child: seleciona o elemento E que seja o último filho do elemento pai.
+E:first-of-type: seleciona o elemento E que seja o primeiro de seu tipo dentro do elemento pai.
+E:last -of-type: semelhante ao anterior, mas com o último elemento.
+E:only-child: seleciona o elemento E que seja o único filho do seu elemento pai.
+E:only-of-type: seleciona o elemento que seja o único filho deste tipo dentro de seu elemento pai.
+
+div:nth-child(1){
+    background:red;
+}
+
+div:nth-last-child(2){
+    background:#AB82FF;
+}
+
+li:nth-of-type(1){
+    color:green;
+}
+
+li:nth-last-of-type(1){
+    color:yellow;
+}
+
+div:last-child{
+    background:orange;
+}
+
+div:first-of-type{
+    border:solid 5px green;
+}
+
+div:last-of-type{
+    border:solid 5px brown;
+}
+
+p:only-child{
+    font-size:30px;
+}
+
+ul:only-of-type{
+    text-decoration:underline;
+}
+
+
+E:empty: seleciona o elemento E que esteja vazio, sem nenhum elemento filho.
+:target: seleciona o objeto alvo de um link interno (aqueles que são precedidos por # e que direcionam o usuário para um elemento na página).
+E:enabled: seleciona o elemento E que esteja habilitado para o usuário
+E:disabled: semelhante ao anterior, mas para elementos desabilitados.
+E:checked: seleciona elementos que estejam marcados (radios e checkboxes).
+::selection: formata o conteúdo selecionado pelo usuário.
+:not(P): seleciona os elementos que não atendem ao seletor simples P.
+E~F: seleciona todo elemento F que seja precedido por um elemento E.
+
+        <h1>Selecione esse texto</h1>
+        <p><a href="#Texto1">Link para o Texto 1</a></p>
+        <p><a href="#Texto2">Link para o Texto 2</a></p>
+        <div>
+            <p id="Texto1">Esse e o TEXTO 1</p>
+            <p id="Texto2">Esse e o TEXTO 2</p>
+        </div>
+        <div id="divVazia"></div>
+        <div>
+            <span>Span antes do input</span><br/>
+            <input type="checkbox" checked="checked" value="Opcao 1">Opcao 1
+            <input type="checkbox"  value="Opcao 2">Opcao 2
+            <input type="text" disabled="disabled" value="desabilitado"/>
+            <input type="text" value="habilitado"/><br/>
+            <span>Span apos o input</span>
+        </div>
+
+:target{
+    color:green;
+    font-weight:bold;
+}
+
+::selection{
+    color:red;
+}
+
+:empty{
+    border:solid 1px;
+    height:50px;
+    background:gray;
+}
+
+input:checked{
+    width: 40px;
+}
+
+h1
+{
+    font-family:"Courier New";
+}
+
+:not(h1)
+{
+    font-family:"Arial";
+}
+
+input~span{
+    color: orange;
+}
+
+input:disabled{
+    border:solid 1px red;
+    background-color: silver;
+    height:25px;
+}
+
+input:enabled{
+    border:solid 1px blue;
+    background-color: #fff;
+    height:25px;
+}
+*/
+
+

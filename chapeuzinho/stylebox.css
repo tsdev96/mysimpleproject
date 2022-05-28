@@ -1,0 +1,59 @@
+blockquote {
+    height: 400px;
+    width: 200px;
+    min-width: 400px;
+    max-width: 200px;
+    width: calc( 100% / 2 ); /*Calcula com base no tamanho da tela. Total da área dividido por dois*/
+    width: 50%; /*Seria o mesmo resulado da regra de cima. width: calc( 100% / 2 - 100px );*/
+}
+
+blockquote {
+    height: 29px;
+    overflow: visible; /*Quando o conteúdo salta. hidden esconde, scroll barras de rolagem, visible e auto*/
+}
+
+blockquote { /*padding é o preenchimento, bem antes da border e margin*/
+    padding-top: 30px;
+    padding-bottom: 60px;
+    padding-left: 50px;
+    padding-right: 25px;
+}
+/*Poderíamos escrever 
+padding: top right bottom left
+blockquote {
+    padding: 10px 25px 20px 50px;
+}
+
+Ou 
+padding: 16px 40px; para quando top/bottom e left/rigth forem iguais
+*/
+
+blockquote {
+    border-top-width: thick;
+    border-bottom-width: 5px;
+    border-left-width: 25px;
+    border-right-width: 50px;
+    border-style: dotted;
+    border-color: red;
+    /*Ou border: 4px dotted #000;*/
+}
+
+/*PROPRIEDADES DE BORDER STYLE
+
+solid
+dotted
+dashed
+double
+groove
+ridge
+inset
+outset
+*/
+
+blockquote {
+    margin-top: 16px;
+    margin-bottom: 16px;
+    margin-left: 40px;
+    margin-right: 40px;
+    /*Ou margin: top right bottom left*/
+}
