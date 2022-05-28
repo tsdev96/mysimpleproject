@@ -1,0 +1,22 @@
+.titulo h2 {
+    color:darkred;
+}
+
+.titulo {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+}
+
+.bolo {
+    text-align: center;
+}
+
+.igredientes h3 {
+    color: darkred;
+    text-decoration: underline;
+}
+
+.fazer h3{
+    color: darkred;
+    text-decoration: underline;
+}

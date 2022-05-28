@@ -1,0 +1,129 @@
+@font-face {
+    font-family: [nome];
+    src: url([https://fonts.googleapis.com/css2?family=Lobster&display=swap]);
+ }
+
+hr, h2 {
+    display: inline-block;
+    font-size: 40px;
+}
+
+h2 {
+    margin-bottom: 0%;
+}
+
+.linha1 {
+    margin-left: 9%;
+}
+
+h1 {
+    margin-left: 36%;
+    margin-top: 0%;
+    font-size: 70px;
+    font-family: Lobster
+}
+
+.container {
+    background-color:lightgray;
+    padding-bottom: 5%;
+}
+
+.home {
+    display: inline-block;
+    background-color: black;
+    height: 10%;
+    width: 15%;
+    margin-top: 3%;
+    margin-left: 3%;
+    margin-right: 45%;
+}
+
+.menu1 {
+    display: inline-block;
+    background-color: black;
+    height: 5%;
+    width: 10%;
+}
+
+.menu2 {
+    display: inline-block;
+    background-color: black;
+    height: 5%;
+    width: 10%;
+    margin-left: 2%;
+}
+
+.menu3 {
+    display: inline-block;
+    background-color: black;
+    height: 5%;
+    width: 10%;
+    margin-left: 2%;
+}
+
+.banner {
+    background-color: black;
+    height: 70%;
+    width: 95%;
+    margin-top: 2%;
+    margin-left: 3%;
+}
+
+.imagem1 {
+    display: inline-block;
+    background-color: black;
+    height: 35%;
+    width: 30%;
+    margin-top: 2%;
+    margin-left: 3%;
+}
+
+.imagem2 {
+    display: inline-block;
+    background-color: black;
+    height: 35%;
+    width: 30%;
+    margin-top: 2%;
+    margin-left: 2%;
+}
+
+.imagem3 {
+    display: inline-block;
+    background-color: black;
+    height: 35%;
+    width: 30%;
+    margin-top: 2%;
+    margin-left: 2%;
+}
+
+.text1 {
+    display: inline-block;
+    height: 35%;
+    width: 30%;
+    margin-top: 1px;
+    margin-left: 3%;
+}
+
+.text2 {
+    display: inline-block;
+    height: 35%;
+    width: 30%;
+    margin-top: 1px;
+    margin-left: 2%;
+}
+
+.text3 {
+    display: inline-block;
+    height: 35%;
+    width: 30%;
+    margin-top: 1px;
+    margin-left: 2%;
+}
+
+footer {
+    background-color: black;
+    height: 15%;
+    width: 95%;
+    margin-top: 2%;
+    margin-left: 3%;
+}
